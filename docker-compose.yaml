@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:17
+    container_name: grpc_user_database
+    hostname: database
+    ports:
+      - "${POSTGRES_PORT}:${POSTGRES_PORT}"
+    env_file:
+      - .env
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

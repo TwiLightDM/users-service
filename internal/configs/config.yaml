@@ -1,0 +1,7 @@
+database:
+  host_database: "localhost"
+  port_database: "5432"
+  user: "postgres_user"
+  password: "superStrongPassword"
+  db_name: "grpc_task_manager"
+
